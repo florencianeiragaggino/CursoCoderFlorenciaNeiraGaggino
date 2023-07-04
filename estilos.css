@@ -224,24 +224,42 @@ font-size: 4.5em;
 }
 }
 
-/* pagina sobre mi */
+/* PAGINA SOBRE MI*/
 
-.row-pagina-sobre-mi{
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    margin-top: 50px;
-    width: 100%;
-    height: 600px;
-}
-
-.p-sobre-mi{
-    color: grey;
+.pagina-sobre-mi{
+    margin: 20px;
     text-align: center;
+    padding: 10px;
 }
+
+.pagina-sobre-mi h1{
+    font-size: 2em;
+    color: grey;
+}
+.pagina-sobre-mi p{
+    font-size: 1em;
+    color: grey;
+    width: fit-content;
+}
+
+.pagina-sobre-mi img{
+ width: 200px;
+ height: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* PAGINA PLANES DE ALIMENTAICON */
 
