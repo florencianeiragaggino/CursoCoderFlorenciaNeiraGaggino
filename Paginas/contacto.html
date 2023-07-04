@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!--metadatos-->
+        <meta charset="utf-8">
+        <meta name="author" content="Florencia Neira Gaggino">  
+        <meta name="description" content="Portafolio de Florencia Neira Gaggino">   
+        <meta name="keywords" content="HTML, CSS, JavaScript, React">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--titulo-->
+        <title>Florencia Neira Gaggino</title>
+        <!--favicon-->
+        <link rel="icon" type="image/x" href="../imagenes/fruit-356519.svg">
+        <!--boostrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!--link hoja de estilo-->
+        <link rel="stylesheet" href="../estilos.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Gafata&display=swap" rel="stylesheet">
+   
+    </head>    
+    <body>
+    <!-- barra de navegacion -->
+    <nav class="navbar navbar-expand-md navbar-light">
+
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+        <img src="../imagenes/fruit-356519.svg" alt="Logo de la pagina WEB">    
+        </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav d-flex justify-content-center aling-items-centar">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./sobremi.html">Sobre mi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./planesdealimentacion.html">Planes de alimentacion</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./turnos.html">Turnos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./preguntasfrecuentes.html">Preguntas frecuentes</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <!-- FORMULARIO-->
+
+<main>
+    <h1>Contacto</h1>
+  
+
+
+  
+    <form action="envio.php"> <!--archivo que va a procesar, el que se hace cargo, si se manda por mail, etc-->
+      
+      <section class="grillaformulario">  
+        
+        <div class="nombre">
+            <label for="nombre">Nombre completo</label> <!--da la intro a lo que tiene que completar-->
+            <input type="text" id="nombre">
+        </div>
+      
+        <div class="email">
+          <label for="email">E-mail</label> <!--da la intro a lo que tiene que completar-->
+          <input type="email" id="email">
+        </div>
+    
+        <div class="telefono">
+          <label for="tel">Telefono</label> <!--da la intro a lo que tiene que completar-->
+          <input type="tel" id="tel">
+        </div>
+
+        <div class="mensaje">
+            <label for="mensaje">Deje su comentario</label> <!--da la intro a lo que tiene que completar-->
+            <br> 
+            <textarea name="" id="" cols="30" rows="10"></textarea> 
+        </div>
+
+        <div class="envio">
+          <input type="reset" value="Limpiar formulario">
+          <input type="submit" value="Enviar formulario">
+        </div>
+        
+        <div class="mapa">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26240.39054797541!2d-58.273438199999994!3d-34.70394859999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a331fdc70bdd5d%3A0x6c702cf3f15dabac!2sBernal%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1685803554090!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+      </section>
+
+      
+      
+    </form>
+
+
+
+    
+
+</main>
+
+    <!-- footer -->
+
+  <footer class="footer d-flex flex-column aling-items-center justify-content-center">
+    <p class="footer-texto text-center">Dejame ayudarte en lograr tu objetivo</p>  
+ 
+    <div class="iconos-footer d-flex flex-wrap aling-items-center justify-content-center">
+
+    <a href="https://www.instagram.com/nutri.florencianeira/">
+      <img src="../imagenes/icons8-instagram-48.png" alt="Instagram">
+    </a>
+    <a href="https://web.whatsapp.com/">
+      <img src="../imagenes/icons8-whatsapp-48.png" alt="WhatsApp">
+    </a>
+</div>
+</footer>
+
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
+    </body>
+</html>

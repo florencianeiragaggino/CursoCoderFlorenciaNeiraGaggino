@@ -1,0 +1,489 @@
+
+html, body {
+    max-width: 100% ;
+    overflow-x: hidden;
+    object-fit: cover;
+    margin: 10px;
+}
+
+.navbar{
+    padding: 2rem;
+    background-color: rgb(75, 178, 75);
+}
+
+.navbar-collapse{
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-brand img{
+    width: 30px;
+}
+
+h1{
+    font-size: 2.5rem;
+    color: grey;
+    font-family: 'Agdasima', sans-serif;
+    font-family: 'Gafata', sans-serif;
+}
+h2{
+    color: grey;
+    font-family: 'Agdasima', sans-serif;
+    font-family: 'Gafata', sans-serif;
+}
+
+/* INDEX PRIMERA SECCION DE TRES SECCIONES */
+.hero {
+    margin: 20px;
+    min-height: 250px;
+    height: fit-content;
+    padding:10px;
+    text-align: center;
+    margin-top:20px ;
+    border-bottom: solid 1px grey;
+  }
+
+.hero h1{
+    font-size: 2em;
+}  
+.hero h2{
+    font-size: 1.2em;
+}  
+
+.hero-img {
+    width: 40px;
+    height: 40px;
+}
+
+.img.hero-img{
+width: 50px;
+height: 50px;
+}
+
+/* INDEX SEGUNDA SECCION DE TRES SECCIONES */
+
+.conoce-a-florencia {
+    height: 500px;
+    padding: 10px;
+    width: 100%; 
+    text-align: center;
+    padding: 10px;
+}
+
+.conoce-a-florencia h2 {
+    color: grey;
+    font-size: 2em;
+    width: 100%;
+    text-align: center;
+}
+
+.conoce-a-florencia p {
+    padding: 10px;
+    margin-top: 10px;
+    color: whgreyite;
+    font-size: 1em;
+    width: 100%;
+    text-align: center;
+}
+
+.img-conoce-a-florencia{
+   width: 150px;
+   height: 150px;
+}
+
+.planes-de-alimentacion{
+    color: grey;
+    margin-top: 30px;
+    height: 650px;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.planes-de-alimentacion img{
+    width: 80px;
+    height: 80px;
+}
+
+h2{ 
+    text-align: center;
+    font-weight: bolder;
+}
+
+    .titulo-planes-index{
+        grid-area: titulo-planes-index;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+    .deportivo-index{
+        grid-area: deportivo-index;
+    }
+    .saludable-index{
+        grid-area: saludable-index;
+    }
+    .entrenamiento-index{
+        grid-area: entrenamiento-index;
+    }
+
+
+
+@media screen and  (min-width: 400px ) {
+    .conoce-a-florencia {
+       height: 500px;
+       text-align: center;
+    }
+
+    .h2-p-conoce-a-florencia{
+        width: 100%;
+        text-align: center;
+
+    }
+    .img-conoce-a-florencia{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and  (min-width: 900px ) {
+.hero h1{
+font-size: 4.5em;
+}
+.hero h2{
+    font-size: 3.5em;
+    }
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px
+}
+    .conoce-a-florencia {
+    padding: 10px;
+    height: 600px;
+    display: grid;
+    align-items: center;      
+      
+    grid-template-areas: 
+    "h2-p-conoce-a-florencia img-conoce-a-florencia "
+    }
+
+    .h2-p-conoce-a-florencia{
+        grid-area: h2-p-conoce-a-florencia;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .h2-p-conoce-a-florencia h2{
+        grid-area: h2-p-conoce-a-florencia;
+        width: 100%;
+        font-size: 3em;
+        text-align: left;
+    
+    }
+    .h2-p-conoce-a-florencia p{
+        grid-area: h2-p-conoce-a-florencia;
+        width: 100%;
+        margin: 10px;
+        font-size: 2em;
+        padding: 30px;
+        text-align: left;
+    }
+
+    .img-conoce-a-florencia{
+        grid-area: img-conoce-a-florencia;
+        width: 500px;
+        height: 500px;
+        padding: 15px;
+    }
+
+.planes-de-alimentacion{
+    display: grid;
+    justify-items: center;
+    align-items: stretch;
+    height: 800px;
+    grid-template-areas: 
+    "titulo-planes-index titulo-planes-index titulo-planes-index"
+    "deportivo-index saludable-index entrenamiento-index";
+}
+.planes-de-alimentacion h3{
+    font-size: 2.5em;
+    padding: 10px;
+}
+.planes-de-alimentacion h2{
+    font-size: 3em;
+    margin-bottom: 50px;
+}
+
+.planes-de-alimentacion p{
+    font-size: 2em;
+    padding: 10px;
+    width: fit-content;
+}
+}
+
+/* pagina sobre mi */
+
+.row-pagina-sobre-mi{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 50px;
+    width: 100%;
+    height: 600px;
+}
+
+.p-sobre-mi{
+    color: grey;
+    text-align: center;
+}
+
+/* PAGINA PLANES DE ALIMENTAICON */
+
+.contenedor-planesdealimentacion{
+    height:fit-content;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.titulo h2{
+    font-size: 2em;
+    padding: 5px;
+}
+
+.deportivo{
+    background-color: rgb(75, 178, 75);
+    padding: 10px;}
+
+.saludable{
+padding: 10px;}
+
+
+.entrenamiento{
+    background-color: rgba(75, 178, 75);
+    padding: 10px;}
+
+
+@media screen and  (min-width: 574px) {
+    .contenedor-planesdealimentacion{
+            display: grid;
+            flex-direction: row;
+            align-content: center;
+            grid-template-areas:
+            "titulo titulo titulo"
+            "deportivo saludable entrenamiento" 
+                  }
+
+    .titulo
+    {grid-area: titulo;
+    }
+    .deportivo{
+        grid-area: deportivo;
+    }
+    .saludable{
+        grid-area: saludable;
+    }
+    .entrenamiento{
+        grid-area: entrenamiento;
+    }
+        }
+
+
+
+/* PAGINA TURNOS  */
+
+.turnos{
+   text-align: center;
+   padding: 10px;
+}
+
+.titulo {
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.presencial{
+margin-bottom: 20px;
+padding: 20px;
+}
+
+.online{
+    margin-bottom: 20px;
+    padding: 20px;
+
+}
+
+.butoon-turnos{
+    color: white;
+    background-color: rgb(75, 178, 75);
+    border: none;
+    padding: 5px;
+}
+
+/*formulario*/
+
+label{
+    padding: 5px;
+    margin: 10px;
+}
+
+input{
+    padding: 5px;
+    margin: 10px;
+}
+
+textarea{
+    padding: 5px;
+    margin: 10px;
+}
+iframe{
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    height: 250px;
+}
+
+.nombre{
+    grid-area: nombre;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.email{
+    display: flex;
+    grid-area: email;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.telefono{
+    grid-area: telefono;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.mensaje{
+    grid-area: mensaje;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.envio{
+    grid-area: envio;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.mapa{
+    grid-area: mapa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.grillaformulario{
+    height: fit-content;
+    display: grid;
+    grid-template-areas: 
+    "nombre"
+    "email"
+    "telefono"
+    "mensaje"
+    "envio"
+    "mapa"
+    "mapa";
+}
+
+      /* Estilos para ≥576px */
+    @media screen and  (min-width: 724px) {
+        .grillaformulario{
+            grid-template-areas: 
+            "nombre email telefono"
+            "mensaje mapa mapa"
+            "envio mapa mapa";
+        }
+
+        iframe{
+            width: 400px;
+            height: 300px;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: rgb(75, 178, 75);
+    padding: 20px;
+    text-align: center;
+    justify-content: end;
+}
+
+
+
+/* Responsive */
+
+
+    /* Estilos para <576px */
+    @media  screen and (max-width: 575.98px) {
+        /* Agrega aquí los estilos específicos para pantallas <576px */
+      }
+  
+      /* Estilos para ≥576px */
+      @media screen and  (min-width: 576px) {
+        /* Agrega aquí los estilos específicos para pantallas ≥576px */
+      }
+  
+      /* Estilos para ≥768px */
+      @media screen and  (min-width: 768px) {
+        /* Agrega aquí los estilos específicos para pantallas ≥768px */
+      }
+  
+      /* Estilos para ≥992px */
+      @media screen and  (min-width: 992px) {
+        /* Agrega aquí los estilos específicos para pantallas ≥992px */
+      }
+  
+      /* Estilos para ≥1200px */
+      @media screen and  (min-width: 1200px) {
+        /* Agrega aquí los estilos específicos para pantallas ≥1200px */
+      }
+  
