@@ -16,7 +16,7 @@ PULL PARA TRAER COSAS DEL REPOSITORIO REMOTO, PARA ACTUALIZAR Y LUEGO PUSH PARA 
 push gir push origin (Escribir si estoy en master o seo o donde este)
 
 
-git branch -l para que me diga las ramas que tengo
+git branch gi-l para que me diga las ramas que tengo
 para crear una git branch [nombre de la rama]
 para ir a la tengo que poner git checkout ¨nombre de la rama"
 
