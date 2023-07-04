@@ -232,13 +232,15 @@ font-size: 4.5em;
     padding: 10px;
 }
 
-.pagina-sobre-mi h1{
-    font-size: 2em;
+.titulo-sobre-mi{
+    font-size: 1.5em;
     color: grey;
+    text-align: center;
 }
-.pagina-sobre-mi p{
+.p-sobre-mi{
     font-size: 1em;
     color: grey;
+    text-align: center;
     width: fit-content;
 }
 
@@ -247,7 +249,30 @@ font-size: 4.5em;
  height: 200px;
 }
 
+@media screen and  (min-width: 900px ) {
+    .pagina-sobre-mi{
+        display: grid;
+        align-items: center;
+        padding: 10px;
+        grid-template-areas: 
+        "titulo-sobre-mi titulo-sobre-mi"
+        "p-sobre-mi img-sobre-mi";
+    }
+    
+.titulo-sobre-mi{
+    grid-area: titulo-sobre-mi;
+    margin-bottom: 20px;
+}
+.p-sobre-mi {
+    grid-area: p-sobre-mi;
+}
 
+.img-sobre-mi {
+    grid-area: img-sobre-mi;
+}
+
+
+}
 
 
 
