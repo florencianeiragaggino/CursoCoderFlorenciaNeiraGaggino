@@ -78,7 +78,8 @@ h2 {
 .conoce-a-florencia p {
     padding: 10px;
     margin-top: 10px;
-    color: grey font-size: 1em;
+    color: grey;
+    font-size: 1em;
     width: 100%;
     text-align: center;
 }
@@ -90,14 +91,14 @@ h2 {
 
 .planes-de-alimentacion {
     color: grey;
-    margin-top: 30px;
     height: 650px;
     padding: 10px;
+    margin: 20px;
+    margin-bottom: 100px;
     text-align: center;
     justify-content: center;
     align-items: center;
 }
-
 
 .planes-de-alimentacion img {
     width: 80px;
@@ -106,7 +107,6 @@ h2 {
 
 h2 {
     text-align: center;
-    font-weight: bolder;
 }
 
 .titulo-planes-index {
@@ -117,14 +117,19 @@ h2 {
 
 .deportivo-index {
     grid-area: deportivo-index;
+    padding: 10px;
 }
 
 .saludable-index {
     grid-area: saludable-index;
+    padding: 10px;
+
 }
 
 .entrenamiento-index {
     grid-area: entrenamiento-index;
+    padding: 10px;
+
 }
 
 @media screen and (min-width: 400px) {
@@ -249,11 +254,7 @@ h2 {
 
     .planes-de-alimentacion p {
         font-size: 1.5em;
-
-
     }
-
-
 }
 
 /* PAGINA SOBRE MI*/
@@ -315,6 +316,7 @@ h2 {
     text-align: center;
     padding: 10px;
     margin-bottom: 100px;
+    gap: 20px;
     width: 100%;
 }
 
@@ -374,6 +376,7 @@ h2 {
 .turnos {
     text-align: center;
     padding: 10px;
+    margin: 10px;
 }
 
 .titulo {
