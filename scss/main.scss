@@ -1,3 +1,5 @@
-body{
-    background-color: blue($color: #000000);
-}
+// partials
+@import "_vars";
+@import "_commons";
+@import "_nav";
+@import "_tienda";
