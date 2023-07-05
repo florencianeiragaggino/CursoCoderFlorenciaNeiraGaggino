@@ -3,11 +3,12 @@ body {
     max-width: 100%;
     overflow-x: hidden;
     object-fit: cover;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .navbar {
     padding: 2rem;
-    background-color: rgb(75, 178, 75);
+    background-color: rgb(75, 166, 178);
 }
 
 .navbar-collapse {
@@ -22,14 +23,10 @@ body {
 h1 {
     font-size: 2.5rem;
     color: grey;
-    font-family: 'Agdasima', sans-serif;
-    font-family: 'Gafata', sans-serif;
 }
 
 h2 {
     color: grey;
-    font-family: 'Agdasima', sans-serif;
-    font-family: 'Gafata', sans-serif;
 }
 
 /* INDEX PRIMERA SECCION DE TRES SECCIONES */
@@ -81,8 +78,7 @@ h2 {
 .conoce-a-florencia p {
     padding: 10px;
     margin-top: 10px;
-    color: whgreyite;
-    font-size: 1em;
+    color: grey font-size: 1em;
     width: 100%;
     text-align: center;
 }
@@ -131,8 +127,6 @@ h2 {
     grid-area: entrenamiento-index;
 }
 
-
-
 @media screen and (min-width: 400px) {
     .conoce-a-florencia {
         height: 500px;
@@ -153,7 +147,7 @@ h2 {
 
 @media screen and (min-width: 900px) {
     .hero h1 {
-        font-size: 4.5em;
+        font-size: 4em;
     }
 
     .hero h2 {
@@ -173,7 +167,6 @@ h2 {
         height: 600px;
         display: grid;
         align-items: center;
-
         grid-template-areas:
             "h2-p-conoce-a-florencia img-conoce-a-florencia "
     }
@@ -187,6 +180,7 @@ h2 {
     .h2-p-conoce-a-florencia h2 {
         grid-area: h2-p-conoce-a-florencia;
         width: 100%;
+        margin: 50px;
         font-size: 3em;
         text-align: left;
 
@@ -195,7 +189,7 @@ h2 {
     .h2-p-conoce-a-florencia p {
         grid-area: h2-p-conoce-a-florencia;
         width: 100%;
-        margin: 10px;
+        margin: 20px;
         font-size: 2em;
         padding: 30px;
         text-align: left;
@@ -210,29 +204,56 @@ h2 {
 
     .planes-de-alimentacion {
         display: grid;
-        justify-items: center;
-        align-items: stretch;
         height: 800px;
+        align-content: center;
+        justify-content: center;
+        align-items: stretch;
+        justify-items: normal;
+        margin: 20px;
         grid-template-areas:
-            "titulo-planes-index titulo-planes-index titulo-planes-index"
-            "deportivo-index saludable-index entrenamiento-index";
+            "titulo-planes-index titulo-planes-index "
+            "deportivo-index entrenamiento-index"
+            "saludable-index saludable-index ";
+        gap: 30px;
     }
 
-    .planes-de-alimentacion h3 {
-        font-size: 2.5em;
-        padding: 10px;
+    .deportivo-index {
+        width: 500px;
+        border: 1px solid lightblue;
+    }
+
+    .entrenamiento-index {
+        max-width: 500px;
+        border: 1px solid lightblue;
+    }
+
+    .saludable-index {
+        max-width: 1000px;
+        border: 1px solid lightblue;
+    }
+
+    .titulo-planes-index {
+        margin-bottom: 0;
+        margin-top: 0;
+        max-width: 1000px;
     }
 
     .planes-de-alimentacion h2 {
         font-size: 3em;
-        margin-bottom: 50px;
+        margin-bottom: 70px;
+    }
+
+    .planes-de-alimentacion h3 {
+        font-size: 2em;
     }
 
     .planes-de-alimentacion p {
-        font-size: 2em;
-        padding: 10px;
-        width: fit-content;
+        font-size: 1.5em;
+
+
     }
+
+
 }
 
 /* PAGINA SOBRE MI*/
@@ -293,6 +314,7 @@ h2 {
     height: fit-content;
     text-align: center;
     padding: 10px;
+    margin-bottom: 100px;
     width: 100%;
 }
 
@@ -302,18 +324,21 @@ h2 {
 }
 
 .deportivo {
-    background-color: rgb(75, 178, 75);
     padding: 10px;
+    border: 1px solid lightblue;
+
 }
 
 .saludable {
     padding: 10px;
+    border: 1px solid lightblue;
+
 }
 
-
 .entrenamiento {
-    background-color: rgba(75, 178, 75);
     padding: 10px;
+    border: 1px solid lightblue;
+
 }
 
 
@@ -369,54 +394,58 @@ h2 {
 
 .butoon-turnos {
     color: white;
-    background-color: rgb(75, 178, 75);
+    background-color: rgb(75, 166, 178);
     border: none;
     padding: 5px;
 }
 
 
 @media screen and (min-width: 900px) {
-    .turnos{
+    .turnos {
         display: grid;
-        grid-template-areas: 
-        "titulo titulo "
-        "presencial online";
-        align-content: center;   
+        grid-template-areas:
+            "titulo titulo "
+            "presencial online";
+        align-content: center;
     }
 
-.titulo{
-    text-align: left;
-}
-
-.titulo h1{
-    text-align: left;
-    font-size: 3em;
-    color: grey;
-}
-
-.titulo p{
-    text-align: left;
-    font-size: 1.5em;
-    color: grey;
-}
-
-    .presencial{
-    width: 100%;
-    text-align: left;
+    .titulo {
+        text-align: left;
     }
 
-    .online{
+    .titulo h1 {
+        text-align: left;
+        font-size: 3em;
+        color: grey;
+    }
+
+    .titulo p {
+        text-align: left;
+        font-size: 1.5em;
+        color: grey;
+    }
+
+    .presencial {
         width: 100%;
         text-align: left;
-        }
+    }
 
-
-
+    .online {
+        width: 100%;
+        text-align: left;
+    }
 
 }
 
 
 /*formulario*/
+
+.titulo-contacto {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
 label {
     padding: 5px;
@@ -516,8 +545,16 @@ iframe {
 }
 
 footer {
-    background-color: rgb(75, 178, 75);
+    background-color: rgb(75, 166, 178);
     padding: 20px;
+    height: 200px;
     text-align: center;
     justify-content: end;
+}
+
+@media screen and (min-width: 900px) {
+    .footer p {
+        font-size: 2em;
+        text-align: right;
+    }
 }
