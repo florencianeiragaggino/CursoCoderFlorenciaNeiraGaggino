@@ -3,3 +3,40 @@
 @import "_commons";
 @import "_nav";
 @import "_tienda";
+
+
+
+//extends. Primero tenes una clase base y despues lo extendes. En este ejemplo los botones son iguales, solo que el segundo le agrego bordes redondos
+.btn-gral{
+    width: 300px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 6px;
+    background-color: $secondaryColor;
+}
+
+.btn-gral{
+    @extend .btn-gral;
+    border-radius: 4px;
+}
+
+//mixins (cosas que repito todo el tiempo)
+//locales: solo puedo llamarlas (a estas 4) en ese mixing. Las globales puedo llamarlas de donde quiero
+@mixin textos($size,$line,$color,$padding){
+font-size: $size; //variable local
+line-height: $line; //variable local
+color: $color; //variable local
+padding: $padding; // variable local
+font-family: $mainFont; //variable global
+}
+
+p{
+    @include textos(1.1em,1.4em ,red ,4px )
+}
+
+.text-box{
+    @include textos(1em,1.5em ,black ,10px )
+
+}

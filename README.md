@@ -17,3 +17,5 @@ para crear una git branch: nombre de la rama
 para ir a la tengo que poner git checkout ¨nombre de la rama"
 segundo link para entregar ademas del github
 settings: pages: elijo la rama de donde quiero hacer el archivo. PEro tiene que haber un index.html. Ella lo hace desde la rama master. Tarda un ratito
+
+En la terminal poner npm run sass:watch
