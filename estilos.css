@@ -269,6 +269,7 @@ h2 {
     font-size: 1.5em;
     color: grey;
     text-align: center;
+    margin: 20px;
 }
 
 .p-sobre-mi {
@@ -309,7 +310,21 @@ h2 {
     }
 }
 
-/* PAGINA PLANES DE ALIMENTAICON */
+
+/*preguntas frecuetnes*/
+.header-preguntas {
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+}
+
+/* PAGINA PLANES DE ALIMENTACION */
+
+.header-planes {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+}
 
 .contenedor-planesdealimentacion {
     height: fit-content;
@@ -402,8 +417,20 @@ h2 {
     padding: 5px;
 }
 
+.titulo-header {
+    text-align: center;
+    margin-top: 20px;
+    margin: 20px;
+}
+
 
 @media screen and (min-width: 900px) {
+
+    .titulo-header {
+        text-align: center;
+        margin-top: 20px;
+    }
+
     .turnos {
         display: grid;
         grid-template-areas:
@@ -416,7 +443,7 @@ h2 {
         text-align: left;
     }
 
-    .titulo h1 {
+    .titulo h2 {
         text-align: left;
         font-size: 3em;
         color: grey;
@@ -443,8 +470,14 @@ h2 {
 
 /*formulario*/
 
+.header-contacto {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+}
+
 .titulo-contacto {
-    font-size: 3em;
+    font-size: 2em;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
