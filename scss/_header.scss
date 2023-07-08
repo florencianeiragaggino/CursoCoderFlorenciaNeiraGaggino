@@ -1,0 +1,224 @@
+
+.hero {
+    margin: 20px;
+    min-height: 250px;
+    height: fit-content;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    border-bottom: solid 1px grey;
+    h1 {
+        font-size: 2em;
+        h2 {
+        font-size: 1.2em;      
+        }
+    }
+        }
+
+
+.hero-img {
+    width: 40px;
+    height: 40px;
+}
+
+.img.hero-img {
+    width: 50px;
+    height: 50px;
+}
+
+/* INDEX SEGUNDA SECCION DE TRES SECCIONES */
+
+.conoce-a-florencia {
+    height: 500px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    h2 {
+        color: grey;
+        font-size: 2em;
+        width: 100%;
+        text-align: center;
+    }
+    p {
+        padding: 10px;
+        margin-top: 10px;
+        color: grey;
+        font-size: 1em;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.img-conoce-a-florencia {
+    width: 150px;
+    height: 150px;
+}
+
+.planes-de-alimentacion {
+    color: grey;
+    height: 650px;
+    padding: 10px;
+    margin: 20px;
+    margin-bottom: 100px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+
+h2 {
+    text-align: center;
+}
+
+.titulo-planes-index {
+    grid-area: titulo-planes-index;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.deportivo-index {
+    grid-area: deportivo-index;
+    padding: 10px;
+}
+
+.saludable-index {
+    grid-area: saludable-index;
+    padding: 10px;
+
+}
+
+.entrenamiento-index {
+    grid-area: entrenamiento-index;
+    padding: 10px;
+
+}
+
+@media screen and (min-width: 400px) {
+    .conoce-a-florencia {
+        height: 500px;
+        text-align: center;
+    }
+
+    .h2-p-conoce-a-florencia {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .img-conoce-a-florencia {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .hero h1 {
+        font-size: 4em;
+    }
+
+    .hero h2 {
+        font-size: 3.5em;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 500px
+    }
+
+    .conoce-a-florencia {
+        padding: 10px;
+        height: 600px;
+        display: grid;
+        align-items: center;
+        grid-template-areas:
+            "h2-p-conoce-a-florencia img-conoce-a-florencia "
+    }
+
+    .h2-p-conoce-a-florencia {
+        grid-area: h2-p-conoce-a-florencia;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .h2-p-conoce-a-florencia h2 {
+        grid-area: h2-p-conoce-a-florencia;
+        width: 100%;
+        margin: 50px;
+        font-size: 3em;
+        text-align: left;
+
+    }
+
+    .h2-p-conoce-a-florencia p {
+        grid-area: h2-p-conoce-a-florencia;
+        width: 100%;
+        margin: 20px;
+        font-size: 2em;
+        padding: 30px;
+        text-align: left;
+    }
+
+    .img-conoce-a-florencia {
+        grid-area: img-conoce-a-florencia;
+        width: 500px;
+        height: 500px;
+        padding: 15px;
+    }
+
+    .planes-de-alimentacion {
+        display: grid;
+        height: 800px;
+        align-content: center;
+        justify-content: center;
+        align-items: stretch;
+        justify-items: normal;
+        margin: 20px;
+        grid-template-areas:
+            "titulo-planes-index titulo-planes-index "
+            "deportivo-index entrenamiento-index"
+            "saludable-index saludable-index ";
+        gap: 30px;
+    }
+
+    .deportivo-index {
+        width: 500px;
+        border: 1px solid lightblue;
+    }
+
+    .entrenamiento-index {
+        max-width: 500px;
+        border: 1px solid lightblue;
+    }
+
+    .saludable-index {
+        max-width: 1000px;
+        border: 1px solid lightblue;
+    }
+
+    .titulo-planes-index {
+        margin-bottom: 0;
+        margin-top: 0;
+        max-width: 1000px;
+    }
+
+    .planes-de-alimentacion h2 {
+        font-size: 3em;
+        margin-bottom: 70px;
+    }
+
+    .planes-de-alimentacion h3 {
+        font-size: 2em;
+    }
+
+    .planes-de-alimentacion p {
+        font-size: 1.5em;
+    }
+}

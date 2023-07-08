@@ -1,10 +1,9 @@
-/* Error: expected ";".
+/* Error: Can't find stylesheet to import.
  *   ,
- * 7 | $white: rgb(235, 229, 299);
- *   |       ^
+ * 3 | @import "sobremi";
+ *   |         ^^^^^^^^^
  *   '
- *   scss\_vars.scss 7:7  @import
- *   scss\main.scss 2:9   root stylesheet */
+ *   scss\main.scss 3:9  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: 'Error: expected ";".\a   \2577 \a 7 \2502  $white: rgb(235, 229, 299);\d\a   \2502        ^\a   \2575 \a   scss\\_vars.scss 7:7  @import\a   scss\\main.scss 2:9   root stylesheet';
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 3 \2502  @import \"sobremi\";\d\a   \2502          ^^^^^^^^^\a   \2575 \a   scss\\main.scss 3:9  root stylesheet";
 }
