@@ -1,7 +1,4 @@
 # CursoCoderFlorenciaNeiraGaggino
-
-Intro a github
-
 Flor
 
 AYUDITA:
