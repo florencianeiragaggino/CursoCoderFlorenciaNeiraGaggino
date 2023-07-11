@@ -1,0 +1,68 @@
+
+/* PAGINA PLANES DE ALIMENTACION */
+
+.header-planes {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+}
+
+.contenedor-planesdealimentacion {
+    height: fit-content;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 100px;
+    gap: 20px;
+    width: 100%;
+}
+
+.titulo h2 {
+    font-size: 2em;
+    padding: 5px;
+}
+
+.deportivo {
+    padding: 10px;
+    border: 1px solid lightblue;
+
+}
+
+.saludable {
+    padding: 10px;
+    border: 1px solid lightblue;
+
+}
+
+.entrenamiento {
+    padding: 10px;
+    border: 1px solid lightblue;
+
+}
+
+
+@media screen and (min-width: 574px) {
+    .contenedor-planesdealimentacion {
+        display: grid;
+        flex-direction: row;
+        align-content: center;
+        grid-template-areas:
+            "titulo titulo titulo"
+            "deportivo saludable entrenamiento"
+    }
+
+    .titulo {
+        grid-area: titulo;
+    }
+
+    .deportivo {
+        grid-area: deportivo;
+    }
+
+    .saludable {
+        grid-area: saludable;
+    }
+
+    .entrenamiento {
+        grid-area: entrenamiento;
+    }
+}

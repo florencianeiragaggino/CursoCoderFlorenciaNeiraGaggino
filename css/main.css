@@ -1,1 +1,462 @@
-/*archivo de salida*/
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.navbar {
+  padding: 2rem;
+  background-color: rgb(75, 166, 178);
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-brand img {
+  width: 30px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: grey;
+}
+
+h2 {
+  color: grey;
+}
+
+/* INDEX PRIMERA SECCION DE TRES SECCIONES */
+.header-index {
+  margin: 20px;
+  min-height: 250px;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+  border-bottom: solid 1px grey;
+}
+
+.hero h1 {
+  font-size: 2em;
+}
+
+.hero h2 {
+  font-size: 1.2em;
+}
+
+.hero-img {
+  width: 40px;
+  height: 40px;
+}
+
+.img.hero-img {
+  width: 50px;
+  height: 50px;
+}
+
+footer {
+  background-color: rgb(75, 166, 178);
+  padding: 20px;
+  height: 200px;
+  text-align: center;
+  justify-content: end;
+}
+
+@media screen and (min-width: 900px) {
+  .footer p {
+    font-size: 2em;
+    text-align: right;
+  }
+}
+/* INDEX PRIMERA SECCION DE TRES SECCIONES */
+.header-index {
+  margin: 20px;
+  min-height: 250px;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+  border-bottom: solid 1px grey;
+}
+
+.hero h1 {
+  font-size: 2em;
+}
+
+.hero h2 {
+  font-size: 1.2em;
+}
+
+.hero-img {
+  width: 40px;
+  height: 40px;
+}
+
+.img.hero-img {
+  width: 50px;
+  height: 50px;
+}
+
+/* INDEX SEGUNDA SECCION DE TRES SECCIONES */
+.conoce-a-florencia {
+  height: 500px;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+.conoce-a-florencia h2 {
+  color: grey;
+  font-size: 2em;
+  width: 100%;
+  text-align: center;
+}
+
+.conoce-a-florencia p {
+  padding: 10px;
+  margin-top: 10px;
+  color: grey;
+  font-size: 1em;
+  width: 100%;
+  text-align: center;
+}
+
+.img-conoce-a-florencia {
+  width: 150px;
+  height: 150px;
+}
+
+.planes-de-alimentacion {
+  color: grey;
+  height: 650px;
+  padding: 10px;
+  margin: 20px;
+  margin-bottom: 100px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.planes-de-alimentacion img {
+  width: 80px;
+  height: 80px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.titulo-planes-index {
+  grid-area: titulo-planes-index;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.deportivo-index {
+  grid-area: deportivo-index;
+  padding: 10px;
+}
+
+.saludable-index {
+  grid-area: saludable-index;
+  padding: 10px;
+}
+
+.entrenamiento-index {
+  grid-area: entrenamiento-index;
+  padding: 10px;
+}
+
+@media screen and (min-width: 400px) {
+  .conoce-a-florencia {
+    height: 500px;
+    text-align: center;
+  }
+  .h2-p-conoce-a-florencia {
+    width: 100%;
+    text-align: center;
+  }
+  .img-conoce-a-florencia {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .hero h1 {
+    font-size: 4em;
+  }
+  .hero h2 {
+    font-size: 3.5em;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+  }
+  .conoce-a-florencia {
+    padding: 10px;
+    height: 600px;
+    display: grid;
+    align-items: center;
+    grid-template-areas: "h2-p-conoce-a-florencia img-conoce-a-florencia ";
+  }
+  .h2-p-conoce-a-florencia {
+    grid-area: h2-p-conoce-a-florencia;
+    width: 100%;
+    padding: 20px;
+  }
+  .h2-p-conoce-a-florencia h2 {
+    grid-area: h2-p-conoce-a-florencia;
+    width: 100%;
+    margin: 50px;
+    font-size: 3em;
+    text-align: left;
+  }
+  .h2-p-conoce-a-florencia p {
+    grid-area: h2-p-conoce-a-florencia;
+    width: 100%;
+    margin: 20px;
+    font-size: 2em;
+    padding: 30px;
+    text-align: left;
+  }
+  .img-conoce-a-florencia {
+    grid-area: img-conoce-a-florencia;
+    width: 500px;
+    height: 500px;
+    padding: 15px;
+  }
+  .planes-de-alimentacion {
+    display: grid;
+    height: 800px;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+    justify-items: normal;
+    margin: 20px;
+    grid-template-areas: "titulo-planes-index titulo-planes-index " "deportivo-index entrenamiento-index" "saludable-index saludable-index ";
+    gap: 30px;
+  }
+  .deportivo-index {
+    width: 500px;
+    border: 1px solid lightblue;
+  }
+  .entrenamiento-index {
+    max-width: 500px;
+    border: 1px solid lightblue;
+  }
+  .saludable-index {
+    max-width: 1000px;
+    border: 1px solid lightblue;
+  }
+  .titulo-planes-index {
+    margin-bottom: 0;
+    margin-top: 0;
+    max-width: 1000px;
+  }
+  .planes-de-alimentacion h2 {
+    font-size: 3em;
+    margin-bottom: 70px;
+  }
+  .planes-de-alimentacion h3 {
+    font-size: 2em;
+  }
+  .planes-de-alimentacion p {
+    font-size: 1.5em;
+  }
+}
+/* PAGINA PLANES DE ALIMENTACION */
+.header-planes {
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+}
+
+.contenedor-planesdealimentacion {
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 100px;
+  gap: 20px;
+  width: 100%;
+}
+
+.titulo h2 {
+  font-size: 2em;
+  padding: 5px;
+}
+
+.deportivo {
+  padding: 10px;
+  border: 1px solid lightblue;
+}
+
+.saludable {
+  padding: 10px;
+  border: 1px solid lightblue;
+}
+
+.entrenamiento {
+  padding: 10px;
+  border: 1px solid lightblue;
+}
+
+@media screen and (min-width: 574px) {
+  .contenedor-planesdealimentacion {
+    display: grid;
+    flex-direction: row;
+    align-content: center;
+    grid-template-areas: "titulo titulo titulo" "deportivo saludable entrenamiento";
+  }
+  .titulo {
+    grid-area: titulo;
+  }
+  .deportivo {
+    grid-area: deportivo;
+  }
+  .saludable {
+    grid-area: saludable;
+  }
+  .entrenamiento {
+    grid-area: entrenamiento;
+  }
+}
+/*preguntas frecuetnes*/
+.header-preguntas {
+  text-align: center;
+  padding: 10px;
+  margin: 20px;
+}
+
+/* PAGINA SOBRE MI*/
+.pagina-sobre-mi {
+  margin: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
+.titulo-sobre-mi {
+  font-size: 1.5em;
+  color: grey;
+  text-align: center;
+  margin: 20px;
+}
+
+.p-sobre-mi {
+  font-size: 1em;
+  color: grey;
+  text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.pagina-sobre-mi img {
+  width: 200px;
+  height: 200px;
+}
+
+@media screen and (min-width: 900px) {
+  .pagina-sobre-mi {
+    display: grid;
+    align-items: center;
+    padding: 10px;
+    grid-template-areas: "titulo-sobre-mi titulo-sobre-mi" "p-sobre-mi img-sobre-mi";
+  }
+  .titulo-sobre-mi {
+    grid-area: titulo-sobre-mi;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  .p-sobre-mi {
+    grid-area: p-sobre-mi;
+    text-align: left;
+  }
+  .img-sobre-mi {
+    grid-area: img-sobre-mi;
+  }
+}
+/*preguntas frecuetnes*/
+.header-preguntas {
+  text-align: center;
+  padding: 10px;
+  margin: 20px;
+}
+
+/* PAGINA TURNOS  */
+.turnos {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.titulo {
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+.presencial {
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.online {
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.butoon-turnos {
+  color: white;
+  background-color: rgb(75, 166, 178);
+  border: none;
+  padding: 5px;
+}
+
+.titulo-header {
+  text-align: center;
+  margin-top: 20px;
+  margin: 20px;
+}
+
+@media screen and (min-width: 900px) {
+  .titulo-header {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .turnos {
+    display: grid;
+    grid-template-areas: "titulo titulo " "presencial online";
+    align-content: center;
+  }
+  .titulo {
+    text-align: left;
+  }
+  .titulo h2 {
+    text-align: left;
+    font-size: 3em;
+    color: grey;
+  }
+  .titulo p {
+    text-align: left;
+    font-size: 1.5em;
+    color: grey;
+  }
+  .presencial {
+    width: 100%;
+    text-align: left;
+  }
+  .online {
+    width: 100%;
+    text-align: left;
+  }
+}/*# sourceMappingURL=main.css.map */

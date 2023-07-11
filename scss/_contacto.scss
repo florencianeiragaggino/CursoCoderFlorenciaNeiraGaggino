@@ -1,0 +1,112 @@
+
+/*formulario*/
+
+.header-contacto {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+}
+
+.titulo-contacto {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+label {
+    padding: 5px;
+    margin: 10px;
+}
+
+input {
+    padding: 5px;
+    margin: 10px;
+}
+
+textarea {
+    padding: 5px;
+    margin: 10px;
+}
+
+iframe {
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    height: 250px;
+}
+
+.nombre {
+    grid-area: nombre;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.email {
+    display: flex;
+    grid-area: email;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.telefono {
+    grid-area: telefono;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.mensaje {
+    grid-area: mensaje;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.envio {
+    grid-area: envio;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.mapa {
+    grid-area: mapa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.grillaformulario {
+    height: fit-content;
+    display: grid;
+    grid-template-areas:
+        "nombre"
+        "email"
+        "telefono"
+        "mensaje"
+        "envio"
+        "mapa"
+        "mapa";
+}
+
+@media screen and (min-width: 724px) {
+    .grillaformulario {
+        grid-template-areas:
+            "nombre email telefono"
+            "mensaje mapa mapa"
+            "envio mapa mapa";
+    }
+
+    iframe {
+        width: 400px;
+        height: 300px;
+    }
+}

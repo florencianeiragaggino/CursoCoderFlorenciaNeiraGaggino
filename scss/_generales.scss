@@ -1,0 +1,77 @@
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    object-fit: cover;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar {
+    padding: 2rem;
+    background-color: rgb(75, 166, 178);
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-brand img {
+    width: 30px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: grey;
+}
+
+h2 {
+    color: grey;
+}
+
+/* INDEX PRIMERA SECCION DE TRES SECCIONES */
+.header-index {
+    margin: 20px;
+    min-height: 250px;
+    height: fit-content;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    border-bottom: solid 1px grey;
+}
+
+.hero h1 {
+    font-size: 2em;
+}
+
+.hero h2 {
+    font-size: 1.2em;
+}
+
+.hero-img {
+    width: 40px;
+    height: 40px;
+}
+
+.img.hero-img {
+    width: 50px;
+    height: 50px;
+}
+
+
+//*footer/*
+
+footer {
+    background-color: rgb(75, 166, 178);
+    padding: 20px;
+    height: 200px;
+    text-align: center;
+    justify-content: end;
+}
+
+@media screen and (min-width: 900px) {
+    .footer p {
+        font-size: 2em;
+        text-align: right;
+    }
+}
