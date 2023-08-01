@@ -1,32 +1,55 @@
 
 /* PAGINA SOBRE MI*/
 
+.titulo-sobre-mi {
+    font-size: 3em;
+    color: $colorTexto;
+    text-align: center;
+    margin: 20px;
+}
+
+.img-sobre-mi {
+    display: flex;
+    justify-content: center;
+}
+
 .pagina-sobre-mi {
     margin: 20px;
-    text-align: center;
+    text-align: left;
     padding: 10px;
+    p {
+        font-size: 1em;
+        color: $colorTexto;
+        text-align: left;
+        width: fit-content;
+    }
+
+    img{
+        width: 200px;
+        height: 200px;
+
+    }
+
 }
 
-.titulo-sobre-mi {
-    font-size: 1.5em;
-    color: grey;
-    text-align: center;
-    margin: 20px;
-}
-
-.p-sobre-mi {
-    font-size: 1em;
-    color: grey;
-    text-align: center;
-    width: fit-content;
-}
-
-.pagina-sobre-mi img {
-    width: 200px;
-    height: 200px;
-}
 
 @media screen and (min-width: 900px) {
+
+    .titulo-sobre-mi {
+        grid-area: titulo-sobre-mi;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .p-sobre-mi {
+        grid-area: p-sobre-mi;
+        text-align: center;
+    }
+
+    .img-sobre-mi {
+        grid-area: img-sobre-mi;
+
+    }
     .pagina-sobre-mi {
         display: grid;
         align-items: center;
@@ -35,27 +58,4 @@
             "titulo-sobre-mi titulo-sobre-mi"
             "p-sobre-mi img-sobre-mi";
     }
-
-    .titulo-sobre-mi {
-        grid-area: titulo-sobre-mi;
-        margin-bottom: 20px;
-        text-align: left;
-    }
-
-    .p-sobre-mi {
-        grid-area: p-sobre-mi;
-        text-align: left;
-    }
-
-    .img-sobre-mi {
-        grid-area: img-sobre-mi;
-    }
-}
-
-
-/*preguntas frecuetnes*/
-.header-preguntas {
-    text-align: center;
-    padding: 10px;
-    margin: 20px;
 }

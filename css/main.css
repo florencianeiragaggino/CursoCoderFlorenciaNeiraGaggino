@@ -1,110 +1,23 @@
-html,
-body {
-  max-width: 100%;
-  overflow-x: hidden;
-  -o-object-fit: cover;
-     object-fit: cover;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-.navbar {
-  padding: 2rem;
-  background-color: rgb(75, 166, 178);
-}
-
-.navbar-collapse {
-  align-items: center;
-  justify-content: center;
-}
-
-.navbar-brand img {
-  width: 30px;
-}
-
-h1 {
-  font-size: 2.5rem;
-  color: grey;
-}
-
-h2 {
-  color: grey;
-}
-
-/* INDEX PRIMERA SECCION DE TRES SECCIONES */
 .header-index {
   margin: 20px;
   min-height: 250px;
-  height: -moz-fit-content;
   height: fit-content;
   padding: 10px;
   text-align: center;
   margin-top: 20px;
   border-bottom: solid 1px grey;
 }
-
-.hero h1 {
+.header-index h1 {
   font-size: 2em;
 }
-
-.hero h2 {
+.header-index h1 h2 {
   font-size: 1.2em;
 }
-
-.hero-img {
+.header-index h1 h2 img {
   width: 40px;
   height: 40px;
 }
 
-.img.hero-img {
-  width: 50px;
-  height: 50px;
-}
-
-footer {
-  background-color: rgb(75, 166, 178);
-  padding: 20px;
-  height: 200px;
-  text-align: center;
-  justify-content: end;
-}
-
-@media screen and (min-width: 900px) {
-  .footer p {
-    font-size: 2em;
-    text-align: right;
-  }
-}
-/* INDEX PRIMERA SECCION DE TRES SECCIONES */
-.header-index {
-  margin: 20px;
-  min-height: 250px;
-  height: -moz-fit-content;
-  height: fit-content;
-  padding: 10px;
-  text-align: center;
-  margin-top: 20px;
-  border-bottom: solid 1px grey;
-}
-
-.hero h1 {
-  font-size: 2em;
-}
-
-.hero h2 {
-  font-size: 1.2em;
-}
-
-.hero-img {
-  width: 40px;
-  height: 40px;
-}
-
-.img.hero-img {
-  width: 50px;
-  height: 50px;
-}
-
-/* INDEX SEGUNDA SECCION DE TRES SECCIONES */
 .conoce-a-florencia {
   height: 500px;
   padding: 10px;
@@ -112,14 +25,12 @@ footer {
   text-align: center;
   padding: 10px;
 }
-
 .conoce-a-florencia h2 {
   color: grey;
   font-size: 2em;
   width: 100%;
   text-align: center;
 }
-
 .conoce-a-florencia p {
   padding: 10px;
   margin-top: 10px;
@@ -143,6 +54,7 @@ footer {
   text-align: center;
   justify-content: center;
   align-items: center;
+  background-image: linear-gradient(to left, rgb(101, 185, 216), rgb(222, 222, 228));
 }
 
 .planes-de-alimentacion img {
@@ -190,11 +102,8 @@ h2 {
   }
 }
 @media screen and (min-width: 900px) {
-  .hero h1 {
-    font-size: 4em;
-  }
-  .hero h2 {
-    font-size: 3.5em;
+  .header-index {
+    font-size: 1.5em;
   }
   .hero {
     display: flex;
@@ -213,22 +122,19 @@ h2 {
   .h2-p-conoce-a-florencia {
     grid-area: h2-p-conoce-a-florencia;
     width: 100%;
-    padding: 20px;
   }
   .h2-p-conoce-a-florencia h2 {
     grid-area: h2-p-conoce-a-florencia;
     width: 100%;
-    margin: 50px;
     font-size: 3em;
-    text-align: left;
+    text-align: center;
   }
   .h2-p-conoce-a-florencia p {
     grid-area: h2-p-conoce-a-florencia;
     width: 100%;
     margin: 20px;
-    font-size: 2em;
-    padding: 30px;
-    text-align: left;
+    font-size: 1.5em;
+    text-align: center;
   }
   .img-conoce-a-florencia {
     grid-area: img-conoce-a-florencia;
@@ -248,14 +154,17 @@ h2 {
     gap: 30px;
   }
   .deportivo-index {
+    font-size: 0.8em;
     width: 500px;
     border: 1px solid lightblue;
   }
   .entrenamiento-index {
+    font-size: 0.8em;
     max-width: 500px;
     border: 1px solid lightblue;
   }
   .saludable-index {
+    font-size: 0.8em;
     max-width: 1000px;
     border: 1px solid lightblue;
   }
@@ -275,6 +184,79 @@ h2 {
     font-size: 1.5em;
   }
 }
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  object-fit: cover;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar {
+  padding: 2rem;
+  background-color: rgb(75, 166, 178);
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-brand img {
+  width: 30px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: grey;
+}
+
+h2 {
+  color: grey;
+}
+
+.header-index {
+  margin: 20px;
+  min-height: 250px;
+  height: fit-content;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+  border-bottom: solid 1px grey;
+}
+
+.hero h1 {
+  font-size: 2em;
+}
+
+.hero h2 {
+  font-size: 1.2em;
+}
+
+.hero-img {
+  width: 40px;
+  height: 40px;
+}
+
+.img.hero-img {
+  width: 50px;
+  height: 50px;
+}
+
+footer {
+  background-color: rgb(75, 166, 178);
+  padding: 20px;
+  height: 200px;
+  text-align: center;
+  justify-content: end;
+}
+
+@media screen and (min-width: 900px) {
+  .footer p {
+    font-size: 1.2em;
+    text-align: right;
+  }
+}
 /* PAGINA PLANES DE ALIMENTACION */
 .header-planes {
   text-align: center;
@@ -283,15 +265,22 @@ h2 {
 }
 
 .contenedor-planesdealimentacion {
-  height: -moz-fit-content;
   height: fit-content;
   text-align: center;
   padding: 10px;
   margin-bottom: 100px;
   gap: 20px;
   width: 100%;
+  background-image: linear-gradient(to left, rgb(101, 185, 216), rgb(222, 222, 228));
 }
 
+/*button{
+    background-color: $colorPrincipal;
+    padding: 5px;
+    color: white;
+    font-size: small;
+
+}*/
 .titulo h2 {
   font-size: 2em;
   padding: 5px;
@@ -299,40 +288,39 @@ h2 {
 
 .deportivo {
   padding: 10px;
-  border: 1px solid lightblue;
 }
 
 .saludable {
   padding: 10px;
-  border: 1px solid lightblue;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
 }
 
 .entrenamiento {
   padding: 10px;
-  border: 1px solid lightblue;
 }
 
 @media screen and (min-width: 574px) {
-  .contenedor-planesdealimentacion {
-    display: grid;
-    flex-direction: row;
-    align-content: center;
-    grid-template-areas: "titulo titulo titulo" "deportivo saludable entrenamiento";
-  }
-  .titulo {
-    grid-area: titulo;
-  }
   .deportivo {
     grid-area: deportivo;
   }
   .saludable {
     grid-area: saludable;
+    border-bottom: none;
+    border-top: none;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
   }
   .entrenamiento {
     grid-area: entrenamiento;
   }
+  .contenedor-planesdealimentacion {
+    display: grid;
+    flex-direction: row;
+    align-content: center;
+    grid-template-areas: "deportivo saludable entrenamiento";
+  }
 }
-/*preguntas frecuetnes*/
 .header-preguntas {
   text-align: center;
   padding: 10px;
@@ -340,64 +328,60 @@ h2 {
 }
 
 /* PAGINA SOBRE MI*/
+.titulo-sobre-mi {
+  font-size: 3em;
+  color: grey;
+  text-align: center;
+  margin: 20px;
+}
+
+.img-sobre-mi {
+  display: flex;
+  justify-content: center;
+}
+
 .pagina-sobre-mi {
   margin: 20px;
-  text-align: center;
+  text-align: left;
   padding: 10px;
 }
-
-.titulo-sobre-mi {
-  font-size: 1.5em;
-  color: grey;
-  text-align: center;
-  margin: 20px;
-}
-
-.p-sobre-mi {
+.pagina-sobre-mi p {
   font-size: 1em;
   color: grey;
-  text-align: center;
-  width: -moz-fit-content;
+  text-align: left;
   width: fit-content;
 }
-
 .pagina-sobre-mi img {
   width: 200px;
   height: 200px;
 }
 
 @media screen and (min-width: 900px) {
+  .titulo-sobre-mi {
+    grid-area: titulo-sobre-mi;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .p-sobre-mi {
+    grid-area: p-sobre-mi;
+    text-align: center;
+  }
+  .img-sobre-mi {
+    grid-area: img-sobre-mi;
+  }
   .pagina-sobre-mi {
     display: grid;
     align-items: center;
     padding: 10px;
     grid-template-areas: "titulo-sobre-mi titulo-sobre-mi" "p-sobre-mi img-sobre-mi";
   }
-  .titulo-sobre-mi {
-    grid-area: titulo-sobre-mi;
-    margin-bottom: 20px;
-    text-align: left;
-  }
-  .p-sobre-mi {
-    grid-area: p-sobre-mi;
-    text-align: left;
-  }
-  .img-sobre-mi {
-    grid-area: img-sobre-mi;
-  }
 }
-/*preguntas frecuetnes*/
-.header-preguntas {
-  text-align: center;
-  padding: 10px;
-  margin: 20px;
-}
-
 /* PAGINA TURNOS  */
 .turnos {
   text-align: center;
   padding: 10px;
   margin: 10px;
+  background-image: linear-gradient(to left, rgb(101, 185, 216), rgb(222, 222, 228));
 }
 
 .titulo {
@@ -435,11 +419,8 @@ h2 {
   }
   .turnos {
     display: grid;
-    grid-template-areas: "titulo titulo " "presencial online";
     align-content: center;
-  }
-  .titulo {
-    text-align: left;
+    grid-template-areas: "presencial online";
   }
   .titulo h2 {
     text-align: left;
@@ -458,5 +439,102 @@ h2 {
   .online {
     width: 100%;
     text-align: left;
+  }
+}
+.header-contacto {
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+}
+
+.titulo-contacto {
+  font-size: 2em;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+label {
+  padding: 5px;
+  margin: 10px;
+}
+
+input {
+  padding: 5px;
+  margin: 10px;
+}
+
+textarea {
+  padding: 5px;
+  margin: 10px;
+}
+
+iframe {
+  padding: 20px;
+  margin: 10px;
+  width: 250px;
+  height: 250px;
+}
+
+.nombre {
+  grid-area: nombre;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.email {
+  display: flex;
+  grid-area: email;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.telefono {
+  grid-area: telefono;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.mensaje {
+  grid-area: mensaje;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.envio {
+  grid-area: envio;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.mapa {
+  grid-area: mapa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grillaformulario {
+  height: fit-content;
+  display: grid;
+  grid-template-areas: "nombre" "email" "telefono" "mensaje" "envio" "mapa" "mapa";
+}
+
+@media screen and (min-width: 724px) {
+  .grillaformulario {
+    grid-template-areas: "nombre email telefono" "mensaje mapa mapa" "envio mapa mapa";
+  }
+  iframe {
+    width: 400px;
+    height: 300px;
   }
 }/*# sourceMappingURL=main.css.map */

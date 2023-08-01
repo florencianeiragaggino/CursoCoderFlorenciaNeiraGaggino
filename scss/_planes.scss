@@ -14,55 +14,62 @@
     margin-bottom: 100px;
     gap: 20px;
     width: 100%;
+    background-image: linear-gradient(to left, rgb(101, 185, 216), rgb(222, 222, 228));
 }
+
+/*button{
+    background-color: $colorPrincipal;
+    padding: 5px;
+    color: white;
+    font-size: small;
+
+}*/
 
 .titulo h2 {
     font-size: 2em;
     padding: 5px;
+
 }
 
 .deportivo {
     padding: 10px;
-    border: 1px solid lightblue;
-
 }
 
 .saludable {
     padding: 10px;
-    border: 1px solid lightblue;
-
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
 }
 
 .entrenamiento {
     padding: 10px;
-    border: 1px solid lightblue;
-
 }
 
 
 @media screen and (min-width: 574px) {
-    .contenedor-planesdealimentacion {
-        display: grid;
-        flex-direction: row;
-        align-content: center;
-        grid-template-areas:
-            "titulo titulo titulo"
-            "deportivo saludable entrenamiento"
-    }
-
-    .titulo {
-        grid-area: titulo;
-    }
 
     .deportivo {
         grid-area: deportivo;
+        
     }
 
     .saludable {
         grid-area: saludable;
+        border-bottom: none;
+        border-top: none;
+        border-left: 1px solid gray;
+        border-right: 1px solid gray;
+
     }
 
     .entrenamiento {
         grid-area: entrenamiento;
+    }
+    .contenedor-planesdealimentacion {
+        display: grid;
+        flex-direction: row;
+        align-content: center;
+        grid-template-areas:       
+            "deportivo saludable entrenamiento"
     }
 }

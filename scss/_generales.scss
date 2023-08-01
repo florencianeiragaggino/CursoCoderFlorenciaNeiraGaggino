@@ -3,12 +3,12 @@ body {
     max-width: 100%;
     overflow-x: hidden;
     object-fit: cover;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .navbar {
     padding: 2rem;
-    background-color: rgb(75, 166, 178);
+    background-color: $colorPrincipal;
 }
 
 .navbar-collapse {
@@ -22,14 +22,13 @@ body {
 
 h1 {
     font-size: 2.5rem;
-    color: grey;
+    color: $colorTexto;
 }
 
 h2 {
-    color: grey;
+    color: $colorTexto;
 }
 
-/* INDEX PRIMERA SECCION DE TRES SECCIONES */
 .header-index {
     margin: 20px;
     min-height: 250px;
@@ -58,11 +57,8 @@ h2 {
     height: 50px;
 }
 
-
-//*footer/*
-
 footer {
-    background-color: rgb(75, 166, 178);
+    background-color: $colorPrincipal;
     padding: 20px;
     height: 200px;
     text-align: center;
@@ -71,7 +67,7 @@ footer {
 
 @media screen and (min-width: 900px) {
     .footer p {
-        font-size: 2em;
+        font-size: 1.2em;
         text-align: right;
     }
 }

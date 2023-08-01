@@ -1,5 +1,3 @@
-
-/* INDEX PRIMERA SECCION DE TRES SECCIONES */
 .header-index {
     margin: 20px;
     min-height: 250px;
@@ -8,27 +6,20 @@
     text-align: center;
     margin-top: 20px;
     border-bottom: solid 1px grey;
-}
 
-.hero h1 {
-    font-size: 2em;
-}
+    h1 {
+        font-size: 2em;
 
-.hero h2 {
-    font-size: 1.2em;
-}
+        h2 {
+            font-size: 1.2em;
 
-.hero-img {
-    width: 40px;
-    height: 40px;
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
 }
-
-.img.hero-img {
-    width: 50px;
-    height: 50px;
-}
-
-/* INDEX SEGUNDA SECCION DE TRES SECCIONES */
 
 .conoce-a-florencia {
     height: 500px;
@@ -36,22 +27,22 @@
     width: 100%;
     text-align: center;
     padding: 10px;
-}
 
-.conoce-a-florencia h2 {
-    color: grey;
-    font-size: 2em;
-    width: 100%;
-    text-align: center;
-}
+    h2 {
+        color: $colorTexto;
+        font-size: 2em;
+        width: 100%;
+        text-align: center;
+    }
 
-.conoce-a-florencia p {
-    padding: 10px;
-    margin-top: 10px;
-    color: grey;
-    font-size: 1em;
-    width: 100%;
-    text-align: center;
+    p {
+        padding: 10px;
+        margin-top: 10px;
+        color: $colorTexto;
+        font-size: 1em;
+        width: 100%;
+        text-align: center;
+    }
 }
 
 .img-conoce-a-florencia {
@@ -60,7 +51,7 @@
 }
 
 .planes-de-alimentacion {
-    color: grey;
+    color: $colorTexto;
     height: 650px;
     padding: 10px;
     margin: 20px;
@@ -68,6 +59,8 @@
     text-align: center;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(to left, rgb(101, 185, 216), rgb(222, 222, 228));
+
 }
 
 .planes-de-alimentacion img {
@@ -121,12 +114,9 @@ h2 {
 }
 
 @media screen and (min-width: 900px) {
-    .hero h1 {
-        font-size: 4em;
-    }
 
-    .hero h2 {
-        font-size: 3.5em;
+    .header-index {
+        font-size: 1.5em;
     }
 
     .hero {
@@ -149,15 +139,13 @@ h2 {
     .h2-p-conoce-a-florencia {
         grid-area: h2-p-conoce-a-florencia;
         width: 100%;
-        padding: 20px;
     }
 
     .h2-p-conoce-a-florencia h2 {
         grid-area: h2-p-conoce-a-florencia;
         width: 100%;
-        margin: 50px;
         font-size: 3em;
-        text-align: left;
+        text-align: center;
 
     }
 
@@ -165,9 +153,8 @@ h2 {
         grid-area: h2-p-conoce-a-florencia;
         width: 100%;
         margin: 20px;
-        font-size: 2em;
-        padding: 30px;
-        text-align: left;
+        font-size: 1.5em;
+        text-align: center;
     }
 
     .img-conoce-a-florencia {
@@ -193,16 +180,19 @@ h2 {
     }
 
     .deportivo-index {
+        font-size: 0.8em;
         width: 500px;
         border: 1px solid lightblue;
     }
 
     .entrenamiento-index {
+        font-size: 0.8em;
         max-width: 500px;
         border: 1px solid lightblue;
     }
 
     .saludable-index {
+        font-size: 0.8em;
         max-width: 1000px;
         border: 1px solid lightblue;
     }
